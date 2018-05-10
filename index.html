@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ToDo App</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Watch and code to do App">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="images/white.ico">
+	</head>
+
+	<body>
+		<header>
+			<h1 class="title">To Do App Project</h1>
+		</header>
+		
+		<!-- Main Controls -->
+		<div class="controls">
+			<p class="text-content">Aim small and miss small.</p>
+			<button onclick="handlers.toggleAll()">Toggle All</button>
+		</div>
+
+		<!-- user input -->
+		<div class="controls">
+			<button onclick="handlers.addTodo()">Add Item</button>
+			<input id="addTodoTextInput" type="text" name="text">
+		</div>
+
+		<!-- Buttons to change the Todo List items -->
+		<div class="controls">
+			<button onclick="handlers.changeTodo()">Change Todo Item</button>
+			<input type="number" name="position" id="todoPosition" class="number-input">
+			<input type="text" name="todoText" id="changeTodoText">
+		</div>
+
+		<!-- Toggle completed item -->
+		<div class="controls">	
+			<button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+			<input type="number" name="toggleCompleted" id="toggleCompletedInput" class="number-input">
+		</div>
+
+		<!-- Todo List container -->
+		<div class="todo-list">
+			<ul>
+				
+			</ul>
+		</div>
+
+
+	<script src="app.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+	"name": "carl-dev",
+	"version": "1.0.0",
+	"description": "course",
+	"main": "app.js",
+	"scripts": {
+		"start": "browser-sync start --server --files **/* --directory --port 2018"
+	},
+	"author": "CDV",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.18.15"
+	}
+}
